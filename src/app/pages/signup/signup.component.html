@@ -1,0 +1,217 @@
+
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-primary">
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" href="#">MyVenture</a></mdb-navbar-brand>
+  
+  <!-- Collapsible content -->
+  <links>
+  
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" href="#about" mdbWavesEffect>About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" href="#service" mdbWavesEffect>Our Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" href ="#teams" mdbWavesEffect>Our Team</a>
+      </li>
+  
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          <mdb-icon fas icon="user"></mdb-icon>Sign Up<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light"  routerLink='/Sign-Up' mdbWavesEffect href="#">Start Up Venture</a>
+          <a class="dropdown-item waves-light"  routerLink='/Sign-Up' mdbWavesEffect href="#">Investor</a>
+          <a class="dropdown-item waves-light"  routerLink='/Sign-Up' mdbWavesEffect href="#">Job Seeker</a>
+        </div>
+      </li>
+  
+    </ul>
+    <!-- Links -->
+  </links>
+  <!-- Collapsible content -->
+    </mdb-navbar>
+  
+<mat-horizontal-stepper>
+
+  <mat-step label="Personal Details">
+    <!-- Default form register -->
+    <form class="text-center border border-light p-5">
+
+      <p class="h4 mb-4">Personal Information</p>
+
+      <!--Name-->
+      <div class="md-form mb-4">
+        <input mdbInput type="text" id="form1" class="form-control">
+        <label for="form1" class="">Your Full Name</label>
+    </div>
+
+      <!-- Link -->
+      <div class="md-form mb-4">
+        <!--Venture Name-->
+        <input mdbInput type="text" id="form1" class="form-control">
+        <label for="form1" class="">Linked In profile*</label>
+    </div>
+
+      <!-- Phone number -->
+      <div class="md-form mb-4">
+        <input mdbInput type="text" id="form1" class="form-control">
+        <label for="form1" class="">Email</label>
+    </div>
+
+    <div class="md-form mb-4">
+      <input mdbInput type="text" id="form1" class="form-control">
+      <label for="form1" class="">Password</label>
+   </div>
+
+      <!-- Newsletter -->
+
+      <!-- Sign up button -->
+      <button type="button" mdbBtn color="primary" matStepperNext mdbWavesEffect>Next</button>  
+
+      <!-- Social register -->
+      <hr>
+
+    </form>
+    <!-- Default form register -->
+  </mat-step>
+  <mat-step label="Professional Details">
+    <form class="text-center border border-light p-5">
+
+      <p class="h4 mb-4">Proffesional Information</p>
+
+      <div class="md-form mb-4">
+        <!--Venture Name-->
+        <input mdbInput type="text" id="form1" class="form-control">
+        <label for="form1" class="">Name Of Venture</label>
+     </div>
+
+     <div class="md-form mb-4">
+      <input mdbInput type="text" id="form1" class="form-control">
+      <label for="form1" class="">Website Link of your Venture</label>
+    </div>
+
+    <div class="md-form mb-4">
+      <input mdbInput type="date" id="form1" class="form-control">
+      <label for="form1" class="">Founded In</label>
+    </div>
+
+
+<!-- Extended material form grid -->
+<form>
+  <div class="row">
+    <!-- Grid column -->
+    <div class="col-md-12">
+      <!-- Material input -->
+      <div class="md-form form-group">
+        <input mdbInput type="text" class="form-control" id="inputAddressMD" placeholder="1234 Main St">
+        <label for="inputAddressMD">Address of office</label>
+      </div>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-12">
+      <!-- Material input -->
+      <div class="md-form form-group">
+        <input mdbInput type="text" class="form-control" id="inputAddress2MD" placeholder="Apartment, studio, or floor">
+        <label for="inputAddress2MD">Address 2</label>
+      </div>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+
+  <!-- Grid row -->
+  <div class="form-row">
+    <!-- Grid column -->
+    <div class="col-md-6">
+      <!-- Material input -->
+      <div class="md-form form-group">
+        <input mdbInput type="text" class="form-control" id="inputCityMD" placeholder="New York City">
+        <label for="inputCityMD">City</label>
+      </div>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-6">
+      <!-- Material input -->
+      <div class="md-form form-group">
+        <input mdbInput type="text" class="form-control" id="inputZipMD" placeholder="11206-1117">
+        <label for="inputZipMD">Zip</label>
+      </div>
+    </div>
+    <!-- Grid column -->
+  </div>
+</form>
+<!-- Extended material form grid -->
+<select class="browser-default custom-select">
+  <option selected>Number of core team members</option>
+  <option value="1">0</option>
+  <option value="2">1</option>
+  <option value="3">2</option>
+  <option value="more">More</option>
+</select>
+      <button type="button" mdbBtn color="primary" matStepperPrevious mdbWavesEffect>Back</button>  
+      <button type="button" mdbBtn color="primary" matStepperNext mdbWavesEffect>Next</button>  
+
+      <!-- Social register -->
+
+    </form>
+
+  </mat-step>
+  <mat-step label="Additional Details">
+    <form class="text-center border border-light p-5">
+
+      <p class="h4 mb-4">Additional Information</p>
+
+      <!--Name-->
+      <div class="md-form mb-4">
+        <div class="md-form">
+          <textarea type="text" id="form7" class="md-textarea form-control" mdbInput></textarea>
+          <label for="form7">Product/Service Summary</label>
+        </div>    
+      </div>
+
+      <!-- Link -->
+      <div class="md-form mb-4">
+        <!--Venture Name-->
+        <input mdbInput type="text" id="form1" class="form-control">
+        <label for="form1" class="">Do you want employee?*</label>
+    </div>
+    <div class="md-form mb-4">
+    <select class="browser-default custom-select">
+      <option selected>If Yes, then select the Job profile</option>
+      <option value="1">Software Developer</option>
+      <option value="2">H.R</option>
+      <option value="4">B.P.O</option>
+      <option value="5">Front-End Developer</option>
+      <option value="6">Full-Stack Developer</option>
+      <option value="7">Sales Executive</option>
+    </select>
+    </div>
+
+      <!-- Sign up button -->
+      <button type="button" mdbBtn color="primary" matStepperPrevious mdbWavesEffect>Back</button>  
+      <button type="button" routerLink='/profile' mdbBtn color="primary" mdbWavesEffect>Sign Up</button>  
+
+      <!-- Social register -->
+      <hr>
+
+      <!-- Terms of service -->
+      <p>By clicking
+        <em>Sign Up</em> you agree to our
+        <a href="" target="_blank">terms of service</a></p>
+
+    </form>
+  
+  </mat-step>
+
+</mat-horizontal-stepper>

@@ -1,0 +1,96 @@
+<!-- Main navigation -->
+<header>
+    <!--Navbar-->
+<app-navbar></app-navbar>
+    <!-- Full Page Intro -->
+    <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <!-- Mask & flexbox options-->
+      <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+        <!-- Content -->
+        <div class="container">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+              <h1 class="h1-responsive font-weight-bold mt-sm-5">Perfect platform for Angel Investing & Startup Fundraising</h1>
+              <hr class="hr-light">
+              <h6 class="mb-4">The purpose of this project is to support budding startup ventures and provide a platform for Investor Investors to invest in a project and also for job seekers to help getting a job   .</h6>
+              <a mdbBtn color="white" (click)="openPopup()" mdbWavesEffect>Sign In</a>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">
+              <img src="../../../assets/images/undraw_Success_factors_re_ce93(1).png" alt="" class="img-fluid">
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Content -->
+      </div>
+      <!-- Mask & flexbox options-->
+    </div>
+    <!-- Full Page Intro -->
+  </header>
+  <!-- Main navigation -->
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <a class="close" (click)="closePopup()">&times;</a>
+<!-- Default form login -->
+<form class="text-center border border-light p-5">
+
+  <p class="h4 mb-4">Sign in</p>
+
+  <!-- Email -->
+  <div class="md-form">
+      <input mdbInput type="text" id="form1" class="form-control">
+      <label for="form1" class="">Username</label>
+  </div>  
+  <!-- Password -->
+  <div class="md-form">
+      <input mdbInput type="text" id="form1" class="form-control">
+      <label for="form1" class="">Password</label>
+  </div>  
+
+  <div>
+    <div>
+      <!-- Forgot password -->
+      <a href="">Forgot password?</a>
+    </div>
+  </div>
+
+  <!-- Sign in button -->
+  <button type="button" routerLink='/profile' mdbBtn color="primary" mdbWavesEffect>Sign In</button>  
+  <!-- Register -->
+  <p>Not a member?
+    <a href="">Register</a>
+  </p>
+
+  <!-- Social login -->
+  <p>or sign in with:</p>
+
+  <a type="button" class="light-blue-text mx-2">
+    <mdb-icon fab icon="facebook"></mdb-icon>
+  </a>
+  <a type="button" class="light-blue-text mx-2">
+    <mdb-icon fab icon="twitter"></mdb-icon>
+  </a>
+  <a type="button" class="light-blue-text mx-2">
+    <mdb-icon fab icon="linkedin"></mdb-icon>
+  </a>
+  <a type="button" class="light-blue-text mx-2">
+    <mdb-icon fab icon="github"></mdb-icon>
+  </a>
+
+</form>
+<!-- Default form login -->
+    </div>
+  </div>
+
+<app-home-cards></app-home-cards>
+
+<app-services></app-services>  
+
+<app-teams></app-teams>
+
+<app-footer></app-footer>

@@ -1,0 +1,38 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+<!-- Navbar brand -->
+<mdb-navbar-brand><a class="navbar-brand" href="#">MyVenture</a></mdb-navbar-brand>
+
+<!-- Collapsible content -->
+<links>
+
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+      <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link waves-light" href="#about" mdbWavesEffect>About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link waves-light" href="#service" mdbWavesEffect>Our Services</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link waves-light" href ="#teams" mdbWavesEffect>Our Team</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown" dropdown>
+      <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+        <mdb-icon fas icon="user"></mdb-icon>Sign Up<span class="caret"></span></a>
+      <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+        <a class="dropdown-item waves-light"  routerLink='/Sign-Up' mdbWavesEffect href="#">Start Up Venture</a>
+        <a class="dropdown-item waves-light"  routerLink='/Sign-Up' mdbWavesEffect href="#">Investor</a>
+        <a class="dropdown-item waves-light"  routerLink='/Sign-Up' mdbWavesEffect href="#">Job Seeker</a>
+      </div>
+    </li>
+
+  </ul>
+  <!-- Links -->
+</links>
+<!-- Collapsible content -->
+  </mdb-navbar>
